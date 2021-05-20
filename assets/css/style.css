@@ -1,0 +1,114 @@
+/*
+[X] Una barra de navegación fija en la parte superior de la pantalla, con el logo y links a
+    diferentes secciones de la página, haciendo un SMOOTH SCROLL.
+[X] Un carousel que muestre las imágenes destacadas del sitio.
+[X] Una sección de presentación, utilizando favicons y 3 párrafos (debe desaparecer en
+    tamaños pequeños de pantalla).
+[X] Una sección de destacados, que muestre 4 cards (tarjetas) con la imagen e
+    información asociada.
+[X] Una sección de formulario de contacto con Typeform.
+[X] Una sección footer con links a las redes sociales.
+
+1.  Construir la estructura de la página usando HTML: (2 Puntos)
+[X] Realizar una correcta integración del CDN de Bootstrap.
+[X] Emplear al menos 3 componentes de Bootstrap (excluyendo aquellos con JavaScript), haciendo uso de la grilla y de clases utilitarias.
+    Container-navbar-clases (text-light,text-left,display,márgenes, paddings)
+
+2. Componer visualmente el documento HTML con propiedades CSS: (2 Puntos)
+[X] Aplicar la sintaxis de CSS utilizando selectores y clases de manera correcta, definiendo notoriamente el aspecto visual del documento.
+[X] Utilizar recursos externos como Google Fonts y Font Awesome, para definir estilos de fuente.
+[X] El código debe estar ordenado, documentado e indentado.
+
+3. Emplear elementos de Bootstrap en el documento HTML: (2 Puntos)
+[X] Realizar una correcta integración del CDN de Bootstrap.
+[X] Emplear al menos 3 componentes de Bootstrap (excluyendo aquellos con JavaScript), haciendo uso de la grilla y de clases utilitarias.
+[X] Documentar la versión de los recursos utilizados.
+
+4. Agregar componentes que utilicen JavaScript: (2 Puntos)
+[X] Utilizar adecuadamente la sintaxis de JavaScript.
+[X] Aplicar correctamente dos o más componentes de Bootstrap JS (carousel,tooltips, entre otros).
+[X] Incluir un formulario de Typeform funcional.
+[X] El código debe estar ordenado y documentado.
+
+5. Gestionar el código fuente utilizando Github: (2 Puntos)
+● Inicializar GIT para versionar el proyecto localmente, realizando 5 o más commits.
+● Implementar la creación de repositorio remoto en Github para el versionamiento del proyecto.
+● Crear la página en Github Pages
+
+https://jsfiddle.net/
+rodrigo.gonzalez.zura@gmail.com
+https://hackernoon.com/the-2020-reactjs-developer-roadmap-8q143yan
+https://www.udemy.com/course/javascript-moderno-guia-definitiva-construye-10-proyectos/
+https://learngitbranching.js.org/?locale=es_AR
+webpack
+npm
+react
+svelte
+node
+JAVASCRIPT
+https://chat.whatsapp.com/JUDAhXcGH3n6zAoVFreJ5p
+*/
+
+body{
+    margin: 0px;          /* sin margenes a los lados */
+    font-family: 'Roboto', sans-serif; /* cuando no funciona la primera, se ocupa la segunda, sino la tercera. estos son los "fallbacks" */
+    background-color: black;
+    color:#ffffff;
+}
+
+body *{                   /* reseteo de etiquetas (*) significa todo, todas las etiquetas dentro de body */
+    margin: 0px;
+    border: 0px;     /* rich black hexadecimal #RRGGBB*/
+    padding: 0px;          /* sin margenes a los lados */
+}
+
+.color-nav-header{
+    background-color:transparent;
+}
+
+.color-nav{
+    background-color:#2a99aa;
+}
+
+
+.fuente-navbar{
+    font-weight: 356;
+    font-size: 2.93em;
+}
+
+.separador-texto {
+    height: 2px;
+    background-color:#2a99aa;
+}
+
+.tamannio-avion{
+    width: 50px;
+    height: 50px;
+}
+
+.height-card{
+    height: 160px;
+}
+
+.modal {
+    text-align: center;
+}
+
+.color-fuente-modal{
+    color: #000;
+}
+
+.fuente-footer{
+    font-weight: 356;
+    font-size: 2.5em;
+}
+
+.tamannio-contacto{
+    width: 100%; 
+    height: 500px;
+}
+/* Oculta las sección Ahora Aceptamos pantalla sea inferior a 768px Pantallas medianas*/
+@media (max-width: 768px) {
+    #carouselimagenes { display:none; }
+}
+
